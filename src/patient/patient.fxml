@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="start" prefHeight="414.0" prefWidth="1185.0" style="-fx-background-color: ;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.PatientController">
+    <stylesheets>
+        <URL value="@patient.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="Id" layoutX="16.0" layoutY="32.0" prefHeight="32.0" prefWidth="84.0" text="ID">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font></Label>
+      <Label fx:id="pp" layoutX="14.0" layoutY="78.0" prefHeight="32.0" prefWidth="72.0" text="Name">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font></Label>
+      <TableView fx:id="patient_table" layoutX="317.0" layoutY="76.0" prefHeight="289.0" prefWidth="864.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="name" prefWidth="158.0" text="name" />
+            <TableColumn fx:id="age" prefWidth="83.0" text="age" />
+            <TableColumn fx:id="address" prefWidth="68.0" text="address" />
+            <TableColumn fx:id="phone" prefWidth="194.0" text="phone" />
+            <TableColumn fx:id="birth" prefWidth="143.0" text="birth" />
+            <TableColumn fx:id="weight" prefWidth="72.0" text="weight" />
+            <TableColumn fx:id="c_gender" prefWidth="75.0" text="gender" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="date" layoutX="113.0" layoutY="314.0" prefHeight="25.0" prefWidth="189.0" />
+      <Label layoutX="11.0" layoutY="128.0" text="Address">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="202.0" prefHeight="22.0" prefWidth="43.0" text="Age">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="251.0" prefHeight="32.0" prefWidth="72.0" text="phone">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="348.0" prefHeight="32.0" prefWidth="84.0" text="weight">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="310.0" text="birth date">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font></Label>
+      <JFXTextField fx:id="pid" layoutX="113.0" layoutY="32.0" maxWidth="179.0" minWidth="179.0" prefHeight="31.0" prefWidth="179.0" />
+      <JFXTextField fx:id="pname" layoutX="113.0" layoutY="79.0" maxWidth="170.0" minWidth="163.0" prefHeight="31.0" prefWidth="170.0" />
+      <JFXTextField fx:id="paddress_txt" layoutX="113.0" layoutY="129.0" maxWidth="179.0" minWidth="179.0" prefHeight="31.0" prefWidth="179.0" />
+      <JFXTextField fx:id="phone_txt" layoutX="113.0" layoutY="244.0" maxWidth="179.0" minWidth="179.0" prefHeight="31.0" prefWidth="179.0" />
+      <JFXTextField fx:id="page_txt" layoutX="108.0" layoutY="204.0" maxWidth="179.0" minWidth="170.0" prefHeight="31.0" prefWidth="179.0" />
+      <JFXTextField fx:id="weight_txt" layoutX="113.0" layoutY="350.0" maxWidth="189.0" minWidth="189.0" prefHeight="31.0" prefWidth="189.0" />
+      <JFXButton fx:id="btn_delete" layoutX="883.0" layoutY="35.0" onMouseClicked="#mouse_eventt" text="Delete" />
+      <JFXButton fx:id="btn_ubdate" layoutX="1097.0" layoutY="35.0" onMouseClicked="#mouse_eventt" text="Update" />
+      <JFXTextField fx:id="search" layoutX="484.0" layoutY="20.0" maxWidth="212.0" minWidth="212.0" onInputMethodTextChanged="#search_patients" onKeyReleased="#search_patients" prefHeight="31.0" prefWidth="212.0" />
+      <ImageView fx:id="ima8" fitHeight="47.0" fitWidth="69.0" layoutX="400.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lsearch" layoutX="326.0" layoutY="16.0" prefHeight="39.0" prefWidth="84.0" text="Search" textFill="#c62828">
+         <font>
+            <Font name="Segoe Print" size="22.0" />
+         </font></Label>
+      <JFXButton fx:id="btn_register" layoutX="326.0" layoutY="379.0" onMouseClicked="#mouse_eventt" prefHeight="47.0" prefWidth="189.0" text="Register" />
+      <JFXButton fx:id="btn_creare" layoutX="1033.0" layoutY="390.0" onMouseClicked="#mouse_eventt" text="Create" />
+      <Label fx:id="lcreate" layoutX="878.0" layoutY="395.0" text="create file to patient" textFill="#f51414">
+         <font>
+            <Font name="Perpetua" size="15.0" />
+         </font></Label>
+      <Label fx:id="glabel" layoutX="17.0" layoutY="170.0" text="Gender">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="compo" layoutX="120.0" layoutY="174.0" prefHeight="25.0" prefWidth="163.0" />
+   </children>
+</AnchorPane>

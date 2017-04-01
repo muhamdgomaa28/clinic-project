@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchr1" prefHeight="559.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="start.fxml">
+   <children>
+      <StackPane fx:id="start" layoutX="-2.0" layoutY="117.0" prefHeight="439.0" prefWidth="1202.0" />
+      <AnchorPane fx:id="view" layoutX="249.0" prefHeight="105.0" prefWidth="125.0">
+         <children>
+            <ImageView fx:id="ima3" fitHeight="67.0" fitWidth="80.0" layoutX="23.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lview" layoutX="42.0" layoutY="73.0" prefHeight="17.0" prefWidth="55.0" text="view">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="prescription" layoutX="374.0" prefHeight="105.0" prefWidth="125.0">
+         <children>
+            <ImageView fx:id="ima4" fitHeight="67.0" fitWidth="80.0" layoutX="23.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lprescription" layoutX="22.0" layoutY="75.0" text="prescription">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="patient" layoutX="135.0" onMouseClicked="#mouse_Event" prefHeight="105.0" prefWidth="114.0">
+         <children>
+            <ImageView fx:id="ima2" fitHeight="67.0" fitWidth="80.0" layoutX="18.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lpatient" layoutX="34.0" layoutY="74.0" prefHeight="19.0" prefWidth="55.0" text="patient">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="admin" layoutX="499.0" prefHeight="105.0" prefWidth="135.0">
+         <children>
+            <ImageView fx:id="ima5" fitHeight="67.0" fitWidth="80.0" layoutX="25.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="ladmin" layoutX="40.0" layoutY="75.0" prefHeight="17.0" prefWidth="64.0" text="admin">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="aboutus" layoutX="634.0" prefHeight="105.0" prefWidth="135.0">
+         <children>
+            <ImageView fx:id="ima6" fitHeight="67.0" fitWidth="80.0" layoutX="27.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="laboutus" layoutX="35.0" layoutY="72.0" prefHeight="19.0" prefWidth="64.0" text="about us">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="home" layoutX="7.0" onMouseClicked="#mouse_Event" prefHeight="105.0" prefWidth="135.0">
+         <children>
+            <ImageView fx:id="ima1" fitHeight="67.0" fitWidth="80.0" layoutX="22.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lhome" layoutX="32.0" layoutY="74.0" prefHeight="17.0" prefWidth="47.0" text="Home">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

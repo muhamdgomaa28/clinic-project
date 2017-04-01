@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="priscription.PrescriptionController">
+    <stylesheets>
+        <URL value="@prescription.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="ll" layoutX="241.0" layoutY="217.0" text="jijijijijijijiijijij" />
+   </children>
+</AnchorPane>
